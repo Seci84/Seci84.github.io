@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Sejung's Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #61dafb;
+            margin: 10px 0;
+        }
+        .authors, .announcement {
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        a.button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.3s;
+        }
+        a.button:hover {
+            background-color: #555;
+        }
+        .highlight {
+            color: #61dafb;
+            font-size: 1.2em;
+        }
+        .project {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: left;
+            margin: 0 auto;
+        }
+        .project div {
+            width: 45%;
+            margin: 20px 0;
+        }
+        .project div img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-title {
+            margin-top: 40px; /* "Projects" 제목의 위쪽 간격을 조정합니다 */
+        }
+        .flowchart {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center; /* 중앙 정렬을 위한 설정 */
+            text-align: center; /* 중앙 정렬을 위한 설정 */
+            margin: 0 auto;
+            max-width: 1200px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flowchart .mermaid {
+            width: 100%; /* 컨테이너의 너비에 맞게 그래프 크기를 조정합니다 */
+            max-width: 100%; /* max-width를 100%로 설정하여 컨테이너를 넘지 않도록 합니다 */
+            height: auto; /* 높이를 자동으로 설정하여 원래 크기를 유지하도록 합니다 */
+            overflow: hidden; /* 가로 스크롤을 방지합니다 */
+        }
+        .contact-info {
+            margin: 20px 0;
+            text-align: center; /* 중앙 정렬을 위한 설정 */
+        }
+        .contact-info a {
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .vlm-title {
+            margin-top: 60px; /* 간격 추가 */
+        }
+        footer {
+            margin-top: auto; /* 페이지 하단으로 밀어냄 */
+            padding: 20px;
+            background-color: #282c34;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kim Sejung's Portfolio</h1>
+        <h2>Data Scientist / Data Engineer / Business Strategist</h2>
+        <p class="highlight">Skills</p>
+        <p>AI, Deep Learning, Python, SQL, Data Analytics</p>
+        <div class="authors">
+            <p class="highlight">Experience</p>
+            <p>Advertising Performance Analysis, Sensor Data Analysis, Government Project Operation, Startup CEO</p>
+            <p>Process Optimization, Data Pipeline Construction of AI Model</p>
+        </div>
+        <div class="buttons">
+            <a href="https://github.com/kimsejung84" class="button"><i class="fab fa-github"></i> Github</a>
+            <a href="https://drive.google.com/file/d/1yEz7DrfTk6fYW2y5e9om2xRNEAV9Tw_J/view?usp=sharing" class="button"><i class="fas fa-image"></i> CV</a>
+            <a href="https://drive.google.com/file/d/16liTD55_hsPfPrxfRZ9LV7DRsGLzQ0Ke/view?usp=sharing" class="button"><i class="fab fa-github"></i> Award</a>
+        </div>
+        <div class="announcement">
+            <p>🔥 At my current job, I am performing data analysis work to improve the performance of artificial intelligence models, work processes, and software functions.</p>
+            <p> Work performance led to cost savings and improved customer service for the company. However, I believe that this kind of analysis work can produce short-term results,</p>
+            <p>but 'what if the company's strategic direction itself is set incorrectly?' I have experienced that it may not be of any help from a long-term perspective.</p>
+            <p>Through this valuable experience, I developed a greater interest in data analysis that can help solve fundamental problems for a company and gain insight into its long-term direction.</p> 
+            <p>I am interested in a Business Strategy leader position that requires data analysis capabilities.</p>
+        </div>
+    </header>
+    <main>
+        <h1 class="project-title">Projects</h1>
+        <div class="project-images">
+            <h2>Developing Data Visualization Dashboard</h2>
+            <p>This dashboard used Datalore from Jetbrains.</p>
+            <p>Datalore is a tool for visualizing data with Python code, and can express any graph that can be expressed in Python.</p>
+            <p>This dashboard was developed by the owner of this web page. Clicking on the image will take you to the dashboard.</p>
+            <div class="project">
+                <div>
+                    <a href="https://datalore.jetbrains.com/report/static/mxaopytpfrVFkDCXhSkN3c/CZkYGcX2ALBt16uEebDehY">
+                        <img src="https://github.com/kimsejung84/kimsejung84.github.io/blob/main/image_1.png?raw=true" alt="Data Visualization Dashboard"> 
+                    </a>
+                </div>
+                <div>
+                    <a href="https://datalore.jetbrains.com/report/static/mxaopytpfrVFkDCXhSkN3c/CZkYGcX2ALBt16uEebDehY">
+                        <img src="https://github.com/kimsejung84/kimsejung84.github.io/blob/main/image_2.png?raw=true" alt="Data Visualization Dashboard"> 
+                    </a>
+                </div>
+            </div>
+            <h2>Optimizing the Labeling Process</h2>
+            <p>This project involves optimizing the labeling process by applying a large-scale AI model to replace the 100% manual labeling work,</p> 
+            <p>with the AI-generated inferences being reviewed by human labelers. We demonstrated the efficiency improvements before and after applying the AI model through analysis,</p>
+            <p>which helped persuade the management. As a result of the changes to the labeling process, we reduced labeling costs by 60%.</p>
+        </div>
+        <div class="flowchart">
+            <div class="mermaid">
+                graph TD
+                    node1(1. Upload video dataset to labeling tool)
+                    node2(2. Run inference with large-scale AI model)
+                    node3(3. Upload inference results to labeling tool)
+                    node4(4. Review by labeling team)
+                    node5(5. Collect labeling tool log data)
+                    node6(6. Analyze before and after application of large-scale AI model)
+                    node7(7. Change the labeling process)
+                    node1-->|Data Engineer|node4
+                    node2-->|ML Engineer|node3-->|Data Engineer|node4
+                    node4-->|Labeling Team|node5
+                    node5-->|Data Scientist|node6
+                    node6-->|Management|node7
+            </div>
+        </div>
+        <div class="vlm-title">
+            <h2>VLM_Datapipeline</h2>
+            <p>The process of pairing images and text in a Vision Language Model (VLM) and building a vector database is as follows:</p>
+            <p>Images are divided into 1024x1024 patches to efficiently utilize the GPU. Then, the images and text are encoded into vectors and paired.</p>
+            <p>These vector pairs are stored in a vector database, and the original metadata is stored in a relational database.</p>
+            <p>This constructed database is designed to quickly search for similar images and text.</p>
+            <div class="project">
+                <div>
+                    <a href="https://github.com/kimsejung84/VLM">
+                        <img src="https://github.com/kimsejung84/VLM/blob/main/image.png?raw=true" alt="VLM_Datapipeline"> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="vlm-title">
+            <h2>Founded a startup for apartment recommendation system</h2>
+            <p>My experience with startup failure was the most challenging in my life.</p>
+            <p>Through this process, I learned that achieving harmony among technology, marketing, talent, organizational culture, and market timing is crucial.</p>
+            <p>At the time, I focused on the belief that our company's product was essential and that high-level technical implementation was key.</p>
+            <p>Although we managed to recruit core members such as developers and designers, the biggest reason for our failure was a lack of communication.</p>
+            <div class="project">
+                <div>
+                    <a href="https://drive.google.com/file/d/1-P3X4B0HPVOnCL740QEtITgulI20HYKV/view?usp=drive_link">
+                        <img src="https://github.com/kimsejung84/kimsejung84.github.io/blob/main/image_3.png?raw=true" alt="Founded a startup for apartment recommendations"> 
+                    </a>
+                </div>
+            </div>
+            <p>We didn't effectively discuss our team's technical capabilities and the market needs, and we were too focused on implementing our initial product idea.</p> 
+            <p>I realized that instead of aiming for high technical standards, we needed a strategy to quickly execute PoCs (Proof of Concepts) and validate market reactions.</p>
+            <p>From this failure, I have adopted a practical and strategic approach in my projects and tasks.</p> 
+            <p>As a Business Strategy Manager, I prioritize communication with team members, incorporating their diverse opinions to leverage collective intelligence.</p> 
+            <p>This approach allows me to devise innovative and creative strategies and effectively address problems.</p>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p></p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+</html>
