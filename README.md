@@ -1,2 +1,2 @@
-# kimsejung84.github.io
+# Seci84.github.io
 portfolio
